@@ -1,8 +1,16 @@
 @startuml
 
-Instance <|-- VulkanRootObject
+Usuario <|-- Perfil
 
-class Instance {
+class Usuario {
+    -- Contructors & destructors --
+    - Instance()
+    
+    -- Public methods --
+    + Initialize() : bool
+}
+
+class Perfil {
     -- Contructors & destructors --
     - Instance()
     
