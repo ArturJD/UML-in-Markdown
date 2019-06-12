@@ -1,6 +1,6 @@
 @startuml
 
-Usuario <|-- Perfil
+Usuario <|-- Perfil <|-- Enderecos
 
 class Usuario {
     -- Contructors & destructors --
@@ -12,6 +12,14 @@ class Usuario {
 }
 
 class Perfil {
+    -- Contructors & destructors --
+    - Instance()
+    
+    -- Public methods --
+    + Initialize() : bool
+}
+
+class Enderecos {
     -- Contructors & destructors --
     - Instance()
     
