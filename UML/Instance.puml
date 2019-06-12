@@ -1,6 +1,7 @@
 @startuml
 
-Usuario <|-- Perfil <|-- Enderecos
+Usuario <|-- Perfil
+Perfil <|-- Enderecos
 
 class Usuario {
     -- Contructors & destructors --
