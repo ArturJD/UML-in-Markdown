@@ -1,15 +1,18 @@
 @startuml
-
 Usuario <|-- Perfil
 Perfil <|-- Enderecos
+Usuario "1" -- "0...*" Enderecos
 
 class Usuario {
     -- Contructors & destructors --
-    - Instance()
+    - Nome  : string
+    - Idade : int
+    - Email : string
+    - Senha : string
     
     -- Public methods --
-    + Nome() : string
-    + Initialize() : bool
+    + CadastrarUsuario()
+    + EditarUsuario()
 }
 
 class Perfil {
@@ -27,5 +30,4 @@ class Enderecos {
     -- Public methods --
     + Initialize() : bool
 }
-
 @enduml
